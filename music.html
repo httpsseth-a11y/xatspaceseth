@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Music - Xatspace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- MENU LATERAL -->
+  <aside class="sidebar">
+    <div class="avatar">
+      <img src="https://i.ibb.co/5X7sWmHK/sethh.jpg" alt="Avatar">
+    </div>
+    <h2 class="sidebar-name">SETH</h2>
+
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="xatspace.html">XATSPACE</a>
+      <a href="contato.html">CONTATO</a>
+      <a href="music.html">MUSIC</a>
+      <a href="proyectos.html">PROYECTOS</a>
+    </nav>
+    <div class="payment-section">
+      <p class="lightning-text">⚡Acepto pagos en satoshis (Lightning)</p>
+      <div class="qr-container">
+        <img src="https://i.ibb.co/rfpjP16W/image.png" alt="QR Code Lightning">
+      </div>
+      <p class="qr-text">Escanea el código QR ⚡</p>
+    </div>
+  </aside>
+
+  <!-- CONTEÚDO MUSIC -->
+  <main class="content-full">
+    <h1 class="page-title"><span class="title-icon icon-music"></span> REPRODUCTOR DE MÚSICA</h1>
+
+    <div class="music-player">
+      <div class="player-header">
+        <div class="album-art">♪</div>
+        <div class="track-info">
+          <h2 id="track-name">Nombre de la Música</h2>
+          <p id="artist-name">Artista</p>
+        </div>
+      </div>
+
+      <div class="player-controls">
+        <div class="progress-wrapper">
+          <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+          </div>
+        </div>
+        <div class="time-info">
+          <span id="current-time">0:00</span>
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+
+      <div class="control-buttons">
+        <button class="btn-control" id="prev">⏮</button>
+        <button class="btn-control btn-play" id="play">▶</button>
+        <button class="btn-control" id="next">⏭</button>
+      </div>
+
+      <div class="volume-control">
+        <button class="volume-icon" id="volume-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+          </svg>
+        </button>
+        <input type="range" id="volume" min="0" max="100" value="70" class="volume-slider">
+      </div>
+    </div>
+
+    <!-- PLAYLIST -->
+    <div class="playlist">
+      <h3 class="playlist-title">📝 Playlist</h3>
+      
+      <div class="track-item active" data-track="0">
+        <span class="track-number">1</span>
+        <span class="track-details">Amiga Mía - Alejandro Sanz</span>
+        <span class="track-duration">4:28</span>
+      </div>
+
+      <div class="track-item" data-track="1">
+        <span class="track-number">2</span>
+        <span class="track-details">Me Gustas Tu - Manu Chao</span>
+        <span class="track-duration">3:58</span>
+      </div>
+
+      <div class="track-item" data-track="2">
+        <span class="track-number">3</span>
+        <span class="track-details">Cotillón - Indios</span>
+        <span class="track-duration">3:42</span>
+      </div>
+
+      <div class="track-item" data-track="3">
+        <span class="track-number">4</span>
+        <span class="track-details">Aquel Lugar - Adolescent's Orquesta</span>
+        <span class="track-duration">4:15</span>
+      </div>
+
+      <div class="track-item" data-track="4">
+        <span class="track-number">5</span>
+        <span class="track-details">Si Te Vas - Marc Anthony</span>
+        <span class="track-duration">5:10</span>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="music.js"></script>
+</body>
+</html>
